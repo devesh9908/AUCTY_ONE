@@ -1,0 +1,73 @@
+1) user Registeration:
+
+ http://menucard.ourproject.in/api/user_register.php
+
+ Parameters:
+
+ user_name=test Users
+ mobile=987654533
+ email=shahidhusen17@gmail.com
+ password=12345
+
+ response:
+
+   {"status":true,"message":"Save Successfully"}
+
+
+2) Login User:
+
+ http://menucard.ourproject.in/api/login.php?
+
+ email=logicunion17@gmail.com
+ password=12345
+
+
+ response:
+
+ {"status":true,"message":"Login Successfully","data":[{"user_id":"3","user_name":"Arshudding chiragudd","mobile":"9226926292","email":"logicunion17@gmail.com","password":"12345","type":"user"}]}
+
+
+
+3) Menu items
+
+http://menucard.ourproject.in/api/menu_item.php
+
+parameters: None
+
+
+response:
+
+{"status":true,"message":"request successfully completed","data":[{"MID":"1","name":"first menu","description":"saf asf sadfsdfsd","image":"http://localhost/khatik/admin/uploads/4117passport.jpg","price":"10"},{"MID":"2","name":"mouse keyboard","description":"This amount deposited into bank","image":"http://menucard.ourproject.in/uploads/7598counters.png","price":"89"}]}
+
+
+
+4) add order Master:
+
+http://menucard.ourproject.in/api/add_order_mast.php
+
+parameters:
+user_id=4
+table_no=3
+amount=300
+
+response:
+
+{"status":true,"message":"Save Successfully","order_no":1524917110}
+
+
+5) add Order Detail
+
+http://menucard.ourproject.in/api/add_order_detail.php
+
+parameters:
+
+order_no=24234324&
+MID=3
+qty=9
+rate=2
+amount=300
+
+response:
+
+{"status":true,"message":"Save Successfully"}
+
